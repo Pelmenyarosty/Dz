@@ -14,7 +14,7 @@ a = list(map(str, a))
 b = list(map(str, b))
 d = list(map(lambda q, w : q + w, a, b))
 d = "".join(d)
-d
+print(d)
 
 # Задача 2
 print("Числа писать через пробел")
@@ -22,10 +22,10 @@ w = input()
 w = w.split()
 w = map(int, w)
 a = list(filter(lambda q : q % 19 == 0 or q % 13 == 0, w))
-a
+print(a)
 
 # Задача 3
 from functools import reduce
 q = [13, 15, 2, 14]
 x = reduce(max, q)
-x
+print(x)
