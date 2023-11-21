@@ -77,7 +77,8 @@ q = set(q.split())
 w = set(w.split())
 e = set(e.split())
 w = w.intersection(q)
-e = e.intersection(w)
+e = list(e.intersection(w))
+e = list(sorted(e))
 if len(e) > 0:
    print( "Все три задачи решил(и) - ", ", ".join(e))
 else:
